@@ -1,0 +1,66 @@
+/* 主题色 @color-theme  */
+@color-t:#126bf5;
+/* 字体主色，主要用于一级标题和正文 @color-default  */
+@color-d:#404e61; 
+/* 字体辅色，主要用于二级标题 @color-subsidiary  */
+@color-s:#8b94a1;
+/* 主要用于边框颜色 @color-border  */
+@color-b:#dfe3e9;
+/* 主要用于成功或正确状态 @color-right  */
+@color-r:#1fa103;
+/* 主要用于错误或警告状态 @color-warning  */
+@color-w:#ee4973;
+/* 边框 */
+@border-d: 1px solid #dfe3e9;
+/* 背景图片引用url */
+@imgUrl:'~@/assets/imgs';
+
+
+
+.flex-between{
+  display: flex;
+  justify-content: space-between;
+}
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-card{
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(145,157,169,.23);
+  border-radius: 5px;
+}
+.pointer{
+  cursor: pointer;
+}
+/* 设置浮动，减少浮动带来的 bug */
+.fl,.fr {
+  display:inline;
+}
+.fl {
+  float:left;
+}
+.fr {
+  float:right;
+}
+/* 清除浮动 */
+.clearfix:before,.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+  overflow:hidden;
+}
+.clearfix {
+  zoom:1; /* for ie6 & ie7 */
+}
+.clear {
+  clear:both;
+  display:block;
+  font-size:0;
+  height:0;
+  line-height:0;
+  overflow:hidden;
+}
