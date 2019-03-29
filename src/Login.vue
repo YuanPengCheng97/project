@@ -7,21 +7,26 @@
       <div class="login-wrap">
         <i class="password"></i><input type="password"  placeholder="请输入密码"/>
       </div>
-      <mt-button type="primary">default</mt-button>
+      <mt-button type="primary" size='large' style='margin-top:20px;height:30px;' @click="login">登 录</mt-button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-
+  data () {
+    return {}
+  },
+  methods: {
+    login () {
+      this.$router.push('/home')
+    }
+  }
 }
 </script>
 
 <style lang="less">
 .login{
-  position: relative;
-  height: 100%;
   .login-box{
     position:absolute;
     left:50%;
@@ -31,13 +36,13 @@ export default {
     .login-wrap{
       display: flex;
       align-items: center;
-      margin-top:20px;
+      margin-bottom:20px;
       .username,.password{
         display: inline-block;
         padding:0 10px;
         width:80px;
         border-bottom:1px solid #dbd9d9;
-        height: 100px;
+        height: 80px;
         background:url('./assets/imgs/i-lock.png') no-repeat center;
       }
       .password{
@@ -46,7 +51,7 @@ export default {
       input{
         border-bottom:1px solid #dbd9d9;
         display: inline-block;
-        height: 100px;
+        height: 80px;
         width:5rem;
       }
     }

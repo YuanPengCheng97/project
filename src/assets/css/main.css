@@ -11,6 +11,7 @@ body {
   color: #000;
   word-break:break-all;
   background: #f6f6f6;
+  height:100%;
 }
 table {
   border-collapse: collapse;

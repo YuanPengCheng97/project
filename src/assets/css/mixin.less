@@ -1,5 +1,5 @@
 /* 主题色 @color-theme  */
-@color-t:#126bf5;
+@color-t:#8b94a1;
 /* 字体主色，主要用于一级标题和正文 @color-default  */
 @color-d:#404e61; 
 /* 字体辅色，主要用于二级标题 @color-subsidiary  */
@@ -63,4 +63,32 @@
   height:0;
   line-height:0;
   overflow:hidden;
+}
+.mint-toast-icon{
+  font-size:50px;
+}
+.mintui-field-success{
+  color:#1fa103;
+}
+.mintui-field-error{
+  color:#ee4973;
+}
+.mint-button--primary{
+  background-color: #8b94a1;
+}
+.mint-toast{
+  border-radius: 15px;
+}
+.comment-title{
+  display: block;
+  font-size:35px;
+  &::before{
+    display: inline-block;
+    content: '';
+    width:10px;
+    height:25px;
+    margin-right:15px;
+    border-radius:10px;
+    background:@color-t;
+  }
 }

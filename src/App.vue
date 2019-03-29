@@ -10,9 +10,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 html,body,#app{
-  height: 100%;
   background:#fff;
 }
+
 </style>
